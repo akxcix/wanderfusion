@@ -3,7 +3,9 @@ import TypographyH2 from "@/components/typography/h2";
 import TypographyH3 from "@/components/typography/h3";
 import TypographyP from "@/components/typography/p";
 import TypographyList from "@/components/typography/list";
-import ButtonLink from "@/components/ui/buttonLink";
+// import ButtonLink from "@/components/ui/buttonLink";
+import WaitlistForm from "../waitlist/waitlistForm";
+import { Separator } from "@radix-ui/react-separator";
 
 const Home = () => {
   return (
@@ -104,9 +106,22 @@ const Home = () => {
         and be among the first to embark on a journey with WanderFusion!
       </TypographyP>
 
-      <ButtonLink variant="default" href="/waitlist">
+      <div className="flex flex-row p-2 space-x-2 rounded-md border">
+        <div className="w-1/2 self-center	">
+          <img
+            className="w-max rounded-md border"
+            src="https://raw.githubusercontent.com/akxcix/images/main/akxcix_paper_plane_pop_icon_dark_themed_a77a5135-3914-40e8-be1c-1ef495f361b2.png"
+          />
+        </div>
+        <Separator orientation="vertical" />
+        <div className="w-1/2">
+          <WaitlistForm />
+        </div>
+      </div>
+
+      {/* <ButtonLink variant="default" href="/waitlist">
         Join the waitlist!
-      </ButtonLink>
+      </ButtonLink> */}
     </div>
   );
 };

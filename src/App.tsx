@@ -10,7 +10,7 @@ function App() {
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <Router>
         <Navbar />
-        <div className="flex py-10 w-full lg:w-1/2 mx-auto">
+        <div className="flex px-5 py-10 w-full lg:w-1/2 mx-auto">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/waitlist" element={<Waitlist />} />
