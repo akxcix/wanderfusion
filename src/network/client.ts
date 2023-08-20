@@ -16,7 +16,7 @@ export const submitWaitlistForm = async (formData: {
   name: string;
   mail: string;
 }) => {
-  const url = "http://localhost:1412/waitlist";
+  const url = "https://api.wanderfusion.com/waitlist";
   try {
     const res = await axios.post(url, formData);
     return { status: "success", message: res.data.data }; // "successfully added to waitlist"
