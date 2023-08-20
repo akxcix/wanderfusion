@@ -68,7 +68,7 @@ const WaitlistForm = () => {
               <FormItem>
                 <FormLabel>name</FormLabel>
                 <FormControl>
-                  <Input placeholder="naruto" {...field} />
+                  <Input placeholder="naruto uzumaki" {...field} />
                 </FormControl>
                 <FormDescription>what should we call you?</FormDescription>
                 <FormMessage />
