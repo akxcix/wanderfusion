@@ -6,10 +6,6 @@ import { ModeToggle } from "../mode-toggle";
 import { cn } from "@/lib/utils";
 import { Separator } from "../ui/separator";
 
-// interface TypographyH2Props {
-//   children: ReactNode;
-// }
-
 const Navbar: React.FC = ({
   className,
   ...props

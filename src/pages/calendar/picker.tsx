@@ -2,8 +2,14 @@ import TypographyH2 from "@/components/typography/h2";
 import { DatePickerWithRange } from "@/components/ui/daterangepicker";
 import { toast } from "@/components/ui/use-toast";
 
+type DateRangeObject = {
+  from?: Date;
+  to?: Date;
+};
+
 const CalendarPicker = () => {
-  const toastdate = (x) => {
+  const toastdate = (x: DateRangeObject | undefined) => {
+    console.log(x);
     toast({
       title: "You submitted the following values:",
       description: (
