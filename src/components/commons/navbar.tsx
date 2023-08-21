@@ -30,10 +30,10 @@ const Navbar: React.FC = ({
           Home
         </Link>
         <Link
-          to="/waitlist"
+          to="/profile"
           className="text-sm font-medium transition-colors hover:text-primary"
         >
-          Waitlist
+          Profile
         </Link>
         <ModeToggle />
       </div>
