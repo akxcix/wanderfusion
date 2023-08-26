@@ -1,9 +1,9 @@
 import { Calendar } from "@/components/ui/calendar";
 
-const CalendarViewer = () => {
+const CalendarViewer = ({ date }) => {
   return (
     <div>
-      <Calendar></Calendar>
+      <Calendar fromDate={date.from} toDate={date.to} />
     </div>
   );
 };
