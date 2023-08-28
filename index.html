@@ -5,6 +5,19 @@
     <link rel="icon" type="image/svg+xml" href="/public/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wander Fusion</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js">
+    </script>
+    <script src="https://apis.google.com/js/client:platform.js?onload=start" async defer>
+    </script>
+    <script>
+      function start() {
+        gapi.load('auth2', function() {
+          auth2 = gapi.auth2.init({
+            client_id: '952197321503-0genib23q5nm10c61d8bk7mdt42rokka.apps.googleusercontent.com',
+          });
+        });
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

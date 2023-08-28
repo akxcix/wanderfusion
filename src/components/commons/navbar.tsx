@@ -26,10 +26,16 @@ const Navbar: React.FC = ({
           Home
         </Link>
         <Link
-          to="/profile"
+          to="/dashboard"
           className="text-sm font-medium transition-colors hover:text-primary"
         >
-          Profile
+          Dashboard
+        </Link>
+        <Link
+          to="/login"
+          className="text-sm font-medium transition-colors hover:text-primary"
+        >
+          Login
         </Link>
         <ModeToggle />
       </div>

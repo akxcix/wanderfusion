@@ -13,7 +13,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-const Profile = () => {
+const Dashboard = () => {
   const calendars = [
     {
       id: "cal1",
@@ -114,4 +114,4 @@ const SelectCal = ({ calendars, callback }) => {
   );
 };
 
-export default Profile;
+export default Dashboard;

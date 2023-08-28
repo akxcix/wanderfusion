@@ -3,55 +3,12 @@ import TypographyH2 from "@/components/typography/h2";
 import TypographyH3 from "@/components/typography/h3";
 import TypographyP from "@/components/typography/p";
 import TypographyList from "@/components/typography/list";
-// import ButtonLink from "@/components/ui/buttonLink";
 import WaitlistForm from "../waitlist/waitlistForm";
-import { Separator } from "@radix-ui/react-separator";
+import SplitCard from "@/components/commons/cards/splitcard";
 
 const Home = () => {
   return (
     <div className="flex flex-col">
-      {/* <TypographyH1>WanderFusion</TypographyH1>
-      <TypographyH1>The Ultimate Group Travel Planner</TypographyH1>
-      <TypographyH3>Plan. Propose. Perfect.</TypographyH3>
-      <TypographyP>
-        Traveling with friends and family just became a whole lot easier.
-        WanderFusion is your all-in-one solution to plan trips with your loved
-        ones. Say goodbye to long chats and scattered plans. With WanderFusion,
-        every decision is collective, every plan is synchronized.
-      </TypographyP>
-      <TypographyH2>Features:</TypographyH2>
-      <TypographyList>
-        <li>
-          Slot Selection for Travel: Propose your travel time slots and let your
-          friends overlay theirs. Find the perfect time window where everyone's
-          available.
-        </li>
-        <li>
-          Group Input: Let everyone voice their preferences. Whether it's
-          destination ideas or dining spots, group decisions are now genuinely
-          democratic.
-        </li>
-        <li>
-          End-to-End Planning: From selecting travel dates to itinerary
-          planning, WanderFusion offers a comprehensive trip planning
-          experience.
-        </li>
-        <li>
-          Notifications & Updates: Stay in the loop with real-time notifications
-          whenever someone proposes a change or confirms a plan.
-        </li>
-        <li>
-          Seamless Integrations: Sync your calendar, flights, and hotel
-          bookings. Everything you need, all in one place.
-        </li>
-      </TypographyList>
-      <p>
-        Be One of the First to Experience WanderFusion!
-        <br />
-        We're getting ready to launch. If you're as excited as we are and want
-        to be one of the first to try WanderFusion, sign up for our waitlist.
-      </p> */}
-
       <TypographyH1>WanderFusion</TypographyH1>
       <TypographyH2>
         Your Travel Buddy for the Ultimate Group Getaways
@@ -106,22 +63,9 @@ const Home = () => {
         and be among the first to embark on a journey with WanderFusion!
       </TypographyP>
 
-      <div className="flex flex-row p-2 space-x-2 rounded-md border">
-        <div className="w-1/2 self-center	">
-          <img
-            className="w-max rounded-md border"
-            src="https://raw.githubusercontent.com/akxcix/images/main/akxcix_paper_plane_pop_icon_dark_themed_a77a5135-3914-40e8-be1c-1ef495f361b2.png"
-          />
-        </div>
-        <Separator orientation="vertical" />
-        <div className="w-1/2">
-          <WaitlistForm />
-        </div>
-      </div>
-
-      {/* <ButtonLink variant="default" href="/waitlist">
-        Join the waitlist!
-      </ButtonLink> */}
+      <SplitCard imgSrc="https://wanderfusion.fra1.cdn.digitaloceanspaces.com/public/plane_pop_icon_dark_themed.png">
+        <WaitlistForm />
+      </SplitCard>
     </div>
   );
 };
